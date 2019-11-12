@@ -1,0 +1,16 @@
+$(function(){
+	$("#bur").click(function(){
+		$(this)
+			.hide()
+			.parents(".m-nav-box")
+			.find(".m-nav-box-content")
+			.show();
+	})
+	$(".close-box").click(function(){
+		$("#bur")
+			.show()
+			.parents(".m-nav-box")
+			.find(".m-nav-box-content")
+			.hide();
+	})
+})
